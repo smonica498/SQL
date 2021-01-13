@@ -1,0 +1,22 @@
+Structured Query Language
+Database -> one or more tables
+Tables -> rows and colums
+
+Columns -> Fields
+Rows -> Record
+
+SQL Keywords are not case sensitive
+
+SQL Commands:
+SELECT - To extract data from database
+UPDATE 
+DELETE
+INSERT INTO
+CREATE DATABASE
+CREATE TABLE
+ALTER TABLE
+DROP TABLE
+CREATE INDEX 
+DROP INDEX
+
+Resource: w3schools.com
