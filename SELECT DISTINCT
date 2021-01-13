@@ -1,0 +1,9 @@
+SELECT DISTINCT - DIfferent values
+
+SELECT DISTINCT column1
+FROM TableName;
+
+SELECT COUNT(DISTINCT Country) FROM Customers;
+
+SELECT COUNT(*) AS DistinctCountries
+FROM (SELECT DISTINCT Country FROM Customers);
