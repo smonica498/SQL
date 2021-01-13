@@ -1,0 +1,15 @@
+SELECT - to select data from database
+
+
+SELECT * FROM TableName
+
+* - everything
+
+
+SELECT column1, column2, column3
+FROM TableName;
+
+This will select Columns 1, 2 and 3 (Fields 1,2,3) from the table.
+
+Q. statement to get all the columns from the Customers table.
+SELECT * FROM Customers
