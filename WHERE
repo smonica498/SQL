@@ -1,0 +1,44 @@
+WHERE Clause - filter conditions
+
+SELECT Column1, Column2
+FROM TableName
+WHERE Condition;
+
+Text Field:
+SELECT Column1
+FROM TableName
+WHERE Country = 'India';
+
+Numeric Field:
+SELECT Column1
+FROM TableName
+WHERE StudentID = 1;
+
+Operators:
+= Equals
+> Greater than
+< Less than
+>= Greater than or equal
+<= Less than or equal
+!= or <> Not equal
+BETWEEN Between a certain range
+LIKE Search for a pattern
+IN To specify multiple values for a column
+
+WHERE Clause using BETWEEN operator:This will give everything from Products table where the Price is between 50 and 60
+SELECT * FROM Products
+WHERE Price BETWEEN 50 AND 60;
+
+WHERE Clause using LIKE operator: This will give everything from Products table where the city name starts with letter t
+SELECT * FROM Customers
+WHERE City LIKE 't%';
+
+WHERE Clause using IN operator:
+SELECT * FROM Customers
+WHERE City IN ('Paris','London');
+
+
+Q. Select all records where the City column has the value "Berlin".
+SELECT * FROM Customers
+WHERE City = 'Berlin';
+
