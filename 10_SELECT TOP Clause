@@ -1,0 +1,28 @@
+SELECT TOP clause - specify the number of records to return
+MySQL supports LIMIT - select a limited number of records
+Oracle uses ROWNUM
+
+SQL Server/MS Access:
+SELECT TOP number| percent columnName
+FROM TableName
+WHERE Condition;
+
+MySQL:
+SELECT ColumnName
+FROM TableName
+WHERE Condition
+LIMIT number;
+
+Oracle:
+SELECT ColumnName
+FROM TableName
+WHERE ROWNUM <= number;
+
+
+The following SQL statement selects the first three records from the Customers table:
+SELECT TOP 3 * FROM Customers;
+
+The following SQL statement slects the first 50% of the records from the Customers table:
+SELECT TOP 50 PERCENT * FROM Customers;
+
+
