@@ -1,0 +1,22 @@
+Field with NULL value means a field with no value
+left blank during record creation
+
+IS NULL and IS NOT operators:
+
+This SQL statement lists all TableName with a NULL value in "column" field:
+SELECT column
+FROM TableName
+WHERE column IS NULL;
+
+This SQL statement lists all TableName with a NOT NULL value in "column" field
+SELECT column
+FROM TableName
+WHERE column IS NOT NULL;
+
+Q. Select all records from the Customers where the PostalCode column is empty.
+SELECT * FROM Customers
+WHERE PostalCode IS NULL;
+
+Q. Select all records from the Customers where the PostalCode column is NOT empty.
+SELECT * FROM Customers
+WHERE PostalCode IS NOT NULL;
