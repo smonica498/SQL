@@ -1,0 +1,28 @@
+MIN() -  returns the smallest value of the selected column
+MAX() - returns the largest value of the selected column
+
+MIN():
+SELECT MIN(Column)
+FROM TableName
+WHERE Condition;
+
+MAX():
+SELECT MAX(Column)
+FROM TableName
+WHERE Condition;
+
+To find the price of the cheapest product:
+SELECT MIN(Price) AS SmallestPrice
+FROM Products;
+
+To find the price of the expensive product:
+SELECT MAX(Price) AS LargestPrice
+FROM Products;
+
+Q. Use the MIN function to select the record with the smallest value of the Price column.
+SELECT MIN(Price)
+FROM Products;
+
+Q. Use an SQL function to select the record with the highest value of the Price column.
+SELECT MAX(Price)
+FROM Products;
