@@ -1,0 +1,28 @@
+AND Operator with WHERE Clause:
+SELECT * FROM TableName
+WHERE Condition1 AND Condition2 AND Condition3;
+
+OR Operator with WHERE Clause:
+SELECT * FROM TableName
+WHERE Condition1 OR Condition2 OR Condition3;
+
+NOT Operator with WHERE Clause:
+SELECT * FROM TableName
+WHERE NOT Condition;
+
+Q. Select all records where the Citycolumn has the value 'Berlin' and the PostalCodecolumn has the value 12209.
+SELECT * FROM Customers
+WHERE City = 'Berlin' AND PostalCode = 12209;
+
+Q. Use the NOT keyword to select all records where City is NOT "Berlin".
+SELECT * FROM Customers
+WHERE NOT City = 'Berlin';
+
+Q. Select all records where the CustomerID column has the value 32.
+SELECT * FROM Customers 
+WHERE CustomerID = 32;
+
+Q. Select all records where the City column has the value 'Berlin' or 'London'.
+SELECT * FROM Customers
+WHERE City = 'Berlin' OR City = 'London'
+
