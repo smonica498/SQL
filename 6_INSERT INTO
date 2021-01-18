@@ -1,0 +1,13 @@
+INSERT INTO TableName (Column1, Column2, Column3)
+VALUES (Value1, Value2, Value3);
+
+INSERT INTO TableName
+VALUES (Value1, Value2, Value3);
+
+INSERT INTO Customers (CustomerName, CustomerCountry, CustomerCity)
+VALUES ('Roy', 'Canada', 'Toronto');
+
+Q. Insert a new record in the Customers table
+INSERT INTO Customers (CustomerName, Address, City, PostalCode,Country)
+VALUES ('Hekkan Burger','Gateveien 15','Sandnes','4306','Norway');
+
