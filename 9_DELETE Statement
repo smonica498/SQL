@@ -1,0 +1,13 @@
+DELETE - delete existing records in a table
+
+DELETE FROM TableName WHERE condition;
+
+If condition is not specified, then all the records in the table will be deleted:
+DELETE FROM TableName;
+
+Q. Delete all the records from the Customers table where the Country value is 'Norway'.
+DELETE FROM Customers
+WHERE Country = 'Norway';
+
+Q. Delete all the records from the Customers table.
+DELETE FROM Customers;
