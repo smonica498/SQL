@@ -1,0 +1,28 @@
+ORDER BY - Sort in ascending (by default) or descending order (DESC)
+
+SELECT Column1, Column2 
+FROM TableName
+ORDER BY Column1, Column2 ASC;
+
+The following SQL statement selects all customers from the "Customers" table, sorted by the "Country" and the "CustomerName" column. 
+This means that it orders by Country, but if some rows have the same Country, it orders them by CustomerName:
+SELECT * FROM Customers
+ORDER BY Country, CustomerName;
+
+The following SQL Statement selects all customers from customers table, sorted by the "Country" in ascending and the "CustomerName" in descending order:
+SELECT * FROM Customers
+ORDER BY Country ASC, CustomerName DESC;
+
+Q. Select all records from the Customers table, sort the result alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City;
+
+Q. Select all records from the Customers table, sort the result reversed alphabetically by the column City.
+SELECT * FROM Customers
+ORDER BY City DESC;
+
+Q. Select all records from the Customers table, sort the result alphabetically, first by the column Country, then, by the column City.
+SELECT * FROM Customers
+ORDER BY Country, City;
+
+
