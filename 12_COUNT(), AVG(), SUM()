@@ -1,0 +1,48 @@
+COUNT() - returns the number of rows that matched a specified criterion
+AVG() - returns the avg value of numeric column
+SUM() - returns the total sum of a numeric column
+
+COUNT(): (NULL values are not counted)
+SELECT COUNT(Column)
+FROM TableName
+WHERE Condition;
+
+AVG(): Null values are ignored
+SELECT AVG(ColumnName)
+FROM TableName
+WHERE condition;
+
+SUM(): Null values are ignored
+SELECT SUM(Column)
+FROM TableName
+WHERE Condition;
+
+The following SQL statement finds the number of products: 
+SELECT COUNT(ProductID)
+FROM Products;
+
+The following SQL statement finds the avg price of all the products:
+SELECT AVG(Price)
+FROM Products;
+
+The following SQL statemnt finds the sum of the Qty fields in the OrderDetails table:
+SELECT SUM(Quantity)
+FROM OrderDetails;
+
+Q. Use the correct function to return the number of records 
+that have the Price value set to 18.
+SELECT COUNT(*)
+FROM Products
+WHERE Price = 18;
+
+Q. Use an SQL function to calculate the average price of all products.
+SELECT AVG(Price)
+FROM Products;
+
+Q. Use an SQL function to calculate the sum of all the Price column values in the Products table.
+SELECT SUM(Price)
+FROM Products;
+
+
+
+
