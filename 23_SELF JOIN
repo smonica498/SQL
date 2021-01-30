@@ -1,0 +1,14 @@
+SELF JOIN - regular join but table is joined with itself
+It is useful when you want to correlate pairs of rows from the same table, for example a parent - child relationship. Employee-Manager, 
+
+//SELF JOIN Syntax: (T1 and T2 are different aliases for the same table)
+SELECT ColumNames
+FROM Table1 T1, Table2 T2
+WHERE Condition;
+
+The following SQL statement matches customers that are from the same city:
+SELECT A.CustomerName AS CustomerName1, B.CustomerName AS CustomerName2, A.City
+FROM Customers A, Customers B
+WHERE A.CustomerID <> B.CustomerID
+AND A.City = B.City
+ORDER BY A.City;
