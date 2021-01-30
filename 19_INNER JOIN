@@ -1,0 +1,22 @@
+INNER JOIN: selects records that have matching values in both the tables
+
+//INNER JOIN Syntax:
+SELECT ColumnNames
+FROM Table1
+INNER JOIN Table2
+ON Table1.ColumnName = Table2.ColumnName;
+
+Join 3 tables:
+The following SQL code selects all the records from OrderID, CustomerName and ShipperName columns that have matching values in all the three tables i.e. Orders, Customers and Shippers.
+The following SQL statement selects all the orders with Customer and Shipper information:
+SELECT Orders.OrderID, Customers.CustomerName, Shippers.ShipperName
+FROM ((Orders
+INNER JOIN Customers ON Orders.CustomerID = Customers.CustomerID)
+INNER JOIN Shippers ON Orders.ShipperID = Shippers.ShipperID);
+
+Q. Choose the correct JOIN clause to select all records from the two tables where there is a match in both tables.
+SELECT *
+FROM Orders
+INNER JOIN Customers
+ON Orders.CustomerID = Customers.CustomerID;
+
