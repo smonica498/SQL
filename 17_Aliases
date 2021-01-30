@@ -1,1 +1,33 @@
+Aliases is used to give a table or a column in a table a temporary name
+Note: double quotation marks or square brackets are used if AliasName contains a space in betwwen
 
+//Alias Column Syntax:
+SELECT ColumnName AS AliasName
+FROM TableName;
+
+//Alias Table Syntax:
+SELECT ColumnName
+FROM TableName AS AliasName;
+
+The following SQL statement creates two aliases, one for the CustomerID column and one for the CustomerName column:
+SELECT CustomerID AS ID, CustomerName AS [Customer Name]
+FROM Customers;
+
+The following SQL statement creates an alias named "Address" that combine four columns (Address, PostalCode, City and Country):
+SELECT CustomerName, Address + ', ' + PostalCode + ', ' + City + ', ' + Country + ', ' AS Address
+FROM Customers;
+
+The following SQL statement selects all the orders from the customer with CustomerID=4 (Around the Horn). 
+We use the "Customers" and "Orders" tables, and give them the table aliases of "c" and "o" respectively:
+SELECT o.OrderID, o.OrderDate, c.CustomerName
+FROM Orders as o, Customers as c
+WHERE o.OrderName = 'Around the Horn' AND c.CustomerID = o.CustomerID;
+
+Q. When displaying the Customers table, make an ALIAS of the PostalCode column, the column should be called Pno instead.
+SELECT CustomerName,
+Address,
+PostalCode AS Pno
+FROM Customers;
+
+Q. When displaying the Customers table, refer to the table as Consumers instead of Customers.
+SELECT * FROM Customers AS Consumers;
