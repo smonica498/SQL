@@ -1,0 +1,15 @@
+SQL LEFT JOIN - The LEFT JOIN keyword returns all records from the left table (table1), and the matched records from the right table (table2). 
+The result is NULL from the right side, if there is no match.
+
+//LEFT JOIN Syntax:
+SELECT ColumnNames
+FROM Table1
+LEFT JOIN Table2
+ON Table1.ColumnName = Table2.ColumnName;
+
+The following SQL statement will select all customers, and any orders they might have:
+SELECT Customers.CustomerName, Orders.OrderID
+FROM Customers
+LEFT JOIN Orders ON Customers.CustomerID = Orders.CustomerID
+ORDER BY Customers.CustomerName;
+
