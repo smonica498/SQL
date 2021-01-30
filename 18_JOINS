@@ -1,0 +1,20 @@
+A JOIN clause is used to combine rows from two or more tables, based on a related column between them.
+
+The following SQL statement (that contains an INNER JOIN), that selects records that have matching values in both tables:
+SELECT Orders.OrderID, Customers.CustomerName, Orders.OrderDate
+FROM Orders
+INNER JOIN Customers ON Orders.CustomerID=Customers.CustomerID;
+
+Types of SQL Joins:
+(Inner) Join - returns records that have matching values in both tables (A intersection B)
+Left (Outer) Join - returns all the records from the Left table and the matching records from the right table (A)
+Right (Outer) Join - returns all the records from the right table and the matching records from the left table (B)
+Full (Outer) Join - returns all the records when there is a match in either left or right table (A union B)
+
+Q. Insert the missing parts in the JOIN clause to join the two tables Orders and Customers, using the CustomerID field in both tables as the relationship between the two tables.
+SELECT *
+FROM Orders
+LEFT JOIN Customers ON Orders.CustomerID = Customers.CustomerID;
+
+
+
